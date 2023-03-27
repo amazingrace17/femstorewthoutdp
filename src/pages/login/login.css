@@ -1,0 +1,17 @@
+.small-container{
+    /* max-width: 500px; */
+    color :black;
+    padding: 12px;
+    margin: 8px;
+    background-color: aliceblue;
+}
+input{
+    max-width: 500px;
+}
+h1,h2,h4{
+    margin: 12px;
+}
+form{
+    padding: 12px;
+    margin: 8px;
+}

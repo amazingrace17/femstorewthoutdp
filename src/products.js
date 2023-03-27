@@ -69,10 +69,10 @@ export const PRODUCTS = [
     remaining: 2,
   },
   {
-    id: 8,
+    id: 9,
     productName: "drip",
-    price: 49.9,
+    price: 39.9,
     productImage: product8,
-    remaining: 2,
+    remaining: 5,
   },
 ];
