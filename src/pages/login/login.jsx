@@ -42,7 +42,7 @@ alert("Registration failed")
     <div class='small-container'>
     
        <div >
-        <div> <h1 className='m-3 header'> Welcome to Femstore</h1>
+        <div> <h1 className='m-3 header'> Welcome to Tifestore</h1>
        <h6> <i>A web app to complete a shopping task </i> </h6></div>
       
        <div>
@@ -55,7 +55,7 @@ alert("Registration failed")
       <ListGroup.Item>On the shopping page, Click <strong> add to Cart</strong> for <strong>five random items</strong>of your choice  </ListGroup.Item>
       <ListGroup.Item>To see all five items selected , Click on <strong>Go to cart </strong>at the buttom of the page or <strong>cart icon </strong>the at the top of the page.</ListGroup.Item>
       <ListGroup.Item>Verify the number of items selected</ListGroup.Item>
-      <ListGroup.Item>Proceed to click on <strong>Checkout</strong>to complete the task.</ListGroup.Item>
+      <ListGroup.Item>Proceed to click on <strong>Checkout</strong> to complete the task.</ListGroup.Item>
     </ListGroup>
         </Container>
        </div>

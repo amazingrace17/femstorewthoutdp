@@ -11,7 +11,7 @@ export const PRODUCTS = [
   {
     id: 1,
     productName: "IPhone",
-    price: 999.0,
+    price: 1000.0,
     productImage: product1,
     remaining: 1,
     additional:" pouch"
@@ -19,7 +19,7 @@ export const PRODUCTS = [
   {
     id: 2,
     productName: "Macbook Pro 2022 (M1)",
-    price: 1999.0,
+    price: 1900.0,
     productImage: product2,
     remaining: 1,
     additional:" laptop cover"
@@ -27,7 +27,7 @@ export const PRODUCTS = [
   {
     id: 3,
     productName: "Cannon M50 Camera",
-    price: 699.0,
+    price: 700.0,
     productImage: product3,
     remaining: 2,
     additional:" leather cover"
@@ -35,21 +35,21 @@ export const PRODUCTS = [
   {
     id: 4,
     productName: "WLS Van Gogh Denim Jacket",
-    price: 228.0,
+    price: 230.0,
     productImage: product4,
     remaining: 2,
   },
   {
     id: 5,
     productName: "LED Light Strips",
-    price: 19.99,
+    price: 30.0,
     productImage: product5,
     remaining: 1,
   },
   {
     id: 6,
     productName: "SPECTRUM LS TEE",
-    price: 68.0,
+    price: 70.0,
     productImage: product6,
     remaining: 3,
   },
@@ -71,7 +71,7 @@ export const PRODUCTS = [
   {
     id: 9,
     productName: "drip",
-    price: 39.9,
+    price: 50.0,
     productImage: product8,
     remaining: 5,
   },
