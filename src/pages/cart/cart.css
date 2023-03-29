@@ -1,5 +1,5 @@
 .cart {
-  max-width: 600px;
+  width :100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
 }
 
 .cartItem {
-  max-width: 700px;
+width : 600px;
   height: 250px;
   display: flex;
 
@@ -16,7 +16,6 @@
   border-radius: 25px;
   margin: 30px;
 }
-
 .cartItem img {
   width: 200px;
 }

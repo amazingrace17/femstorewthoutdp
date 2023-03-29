@@ -32,7 +32,7 @@ export const Shop = () => {
          <button  class="btn-bg btn-primary m-3 "  onClick={() => {
            
            navigate("/cart");
-         }}> GO TO CHECKOUT</button>
+         }}> GO TO CART</button>
     </div>
       </div>
    

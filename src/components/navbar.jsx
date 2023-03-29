@@ -8,7 +8,7 @@ import "./navbar.css";
 export const Navbar = () => {
 
   return (
-    <div className="navbar container">
+    <div className="navbar ">
       <div className="links container">
       
   

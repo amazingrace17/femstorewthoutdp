@@ -40,11 +40,13 @@ alert("Registration failed")
   return (  
     <>
     <div class='small-container'>
+    
        <div >
-       <h1 className='m-3 header'> Welcome to Femstore</h1>
-       <h4> A demonstration project</h4>
+        <div> <h1 className='m-3 header'> Welcome to Femstore</h1>
+       <h6> <i>A web app to complete a shopping task </i> </h6></div>
+      
        <div>
-        <h2> Here are some instructions for you</h2>
+        <h2> Here are some instructions to complete the shopping task</h2>
         <Container>
         <ListGroup>
       <ListGroup.Item> Please Provide the same username and gender in both tasks</ListGroup.Item>
