@@ -1,18 +1,18 @@
-import React, {useState} from "react";
+import React from "react";
 import { PRODUCTS } from "../../products";
 import { Product } from "./product";
 import "./shop.css";
 
 // import Timer from '../../components/timer'
 import { useNavigate } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+// import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
 
 export const Shop = () => {
 
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(true);
 
-  const handleClose = () => setShow(false);
+  // const handleClose = () => setShow(false);
  
 
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ export const Shop = () => {
        
       </div>
       {/* <Timer /> */}
-      <div className="products">
+      <div className="products container-fluid">
         {PRODUCTS.map((product) => (
           <Product data={product} />
         ))}
@@ -36,7 +36,7 @@ export const Shop = () => {
     </div>
       </div>
    
-    <Modal
+    {/* <Modal
         show={show}
         onHide={handleClose}
         backdrop="static"
@@ -57,7 +57,7 @@ export const Shop = () => {
           <Button variant="primary" onClick={handleClose}>Accept All</Button>
         </Modal.Footer>
       </Modal>
-    
+     */}
     </>
     
   );

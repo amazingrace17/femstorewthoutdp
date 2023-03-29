@@ -5,19 +5,19 @@ import { CartItem } from "./cart-item";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import "./cart.css";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
+// import Form from 'react-bootstrap/Form';
 // import Timer from "../../components/timer";
 
 
 
 export const Cart = ({ startTime }) => {
   const [elapsedTime, setElapsedTime] = useState(0);
-  const [show, setShow] = useState(true);
-  const [isChecked, setIsChecked] = useState(true);  
+  // const [show, setShow] = useState(true);
+  // const [isChecked, setIsChecked] = useState(true);  
 
-  const handleClose = () => setShow(false);
+  // const handleClose = () => setShow(false);
   
   function formatTime(time) {
     const date = new Date(time);
@@ -44,13 +44,13 @@ export const Cart = ({ startTime }) => {
   const totalAmount = getTotalCartAmount();
 let totalCartAmount= getTotalCartItems();  
 
-const handleCheckboxChange = (event) => {
-  setIsChecked(event.target.checked);
+// const handleCheckboxChange = (event) => {
+//   setIsChecked(event.target.checked);
   
-};
-if (isChecked) {
-  totalCartAmount += 1;
-}
+// };
+// if (isChecked) {
+//   totalCartAmount += 1;
+// }
 
   const user = JSON.parse(localStorage.getItem("userInfo") )
 
@@ -62,13 +62,13 @@ const timeTaken = formatTime(elapsedTime)
   const submitHandler = async(e) =>{
     // e.preventDefault();
     try{
-        const {data} = await axios.post('https://storebackend-h0h1.onrender.com/cart/darkCarts',{
+        const {data} = await axios.post('https://storebackend-h0h1.onrender.com/cart',{
          items: totalCartAmount,
          userId: user_Id,
          timeTaken:timeTaken,
          bill:totalAmount,
         }) 
-        console.log(data, 'SAVING TO DARK CARK')
+        console.log(data, 'SAVING TO Cart')
     }catch(err){
 alert("Registration failed")
     }
@@ -79,7 +79,7 @@ alert("Registration failed")
     <div className="cart">
       <div>
         <h1>Your Cart Items </h1>
-        <p>Elapsed Time: {timeTaken}</p>
+       
       </div>
       <div className="cart"> 
         {PRODUCTS.map((product) => {
@@ -101,23 +101,29 @@ alert("Registration failed")
           <button onClick={() => navigate("/shop")}> Continue Shopping </button>
          
            
-          <button onClick={() => navigate("/shop")}> Checkout</button>
+          <button  onClick={() => {
+            submitHandler();
+           handleStop()
+            console.log(`Elapsed Time: ${formatTime(elapsedTime)}` )
+            console.log(timeTaken)
+            navigate("/contact");
+          }}> Checkout</button>
           <br/>
-         <input
+         {/* <input
               type="checkbox"
               name="gender"
               value="male"
              defaultChecked={isChecked}
               checked={isChecked}
               onChange={handleCheckboxChange}
-            /> Add laptop cover
+            /> Add laptop cover */}
  
         </div>
           
       ) : (
         <h1> Your Shopping Cart is Empty</h1>
       )}
-  <Button variant="outline-light"
+  {/* <Button variant="outline-light"
           onClick={() => {
             submitHandler();
            handleStop()
@@ -129,8 +135,8 @@ alert("Registration failed")
           {" "}
           Checkout{" "}
         
-          </Button>{' '}
-          <Modal
+          </Button>{' '} */}
+          {/* <Modal
         show={show}
         onHide={handleClose}
         backdrop="static"
@@ -155,7 +161,7 @@ alert("Registration failed")
         
           <Button variant="primary" onClick={handleClose}>Accept</Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };

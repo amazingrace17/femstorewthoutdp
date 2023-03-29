@@ -8,8 +8,8 @@ import "./navbar.css";
 export const Navbar = () => {
 
   return (
-    <div className="navbar">
-      <div className="links">
+    <div className="navbar container">
+      <div className="links container">
       
   
         <Link to="/shop"> Shop </Link>
