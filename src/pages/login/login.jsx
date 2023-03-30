@@ -56,6 +56,7 @@ alert("Registration failed")
       <ListGroup.Item>To see all five items selected , Click on <strong>Go to cart </strong>at the buttom of the page or <strong>cart icon </strong>the at the top of the page.</ListGroup.Item>
       <ListGroup.Item>Verify the number of items selected</ListGroup.Item>
       <ListGroup.Item>Proceed to click on <strong>Checkout</strong> to complete the task.</ListGroup.Item>
+      <ListGroup.Item>The duration of this task is maximum of 10 minutes as the beginning of the instruction</ListGroup.Item>
     </ListGroup>
         </Container>
        </div>
