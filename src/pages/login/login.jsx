@@ -49,6 +49,7 @@ alert("Registration failed")
         <h2> Here are some instructions to complete the shopping task</h2>
         <Container>
         <ListGroup>
+        <ListGroup.Item>The duration of this task is maximum of 10 minutes</ListGroup.Item>
       <ListGroup.Item> Please Provide the same username and gender in both tasks</ListGroup.Item>
       <ListGroup.Item>Enter a username, select your gender and click on <strong> Submit to start Shopping</strong></ListGroup.Item>
       {/* <ListGroup.Item>Submit your information to start shopping</ListGroup.Item> */}
@@ -56,7 +57,7 @@ alert("Registration failed")
       <ListGroup.Item>To see all five items selected , Click on <strong>Go to cart </strong>at the buttom of the page or <strong>cart icon </strong>the at the top of the page.</ListGroup.Item>
       <ListGroup.Item>Verify the number of items selected</ListGroup.Item>
       <ListGroup.Item>Proceed to click on <strong>Checkout</strong> to complete the task.</ListGroup.Item>
-      <ListGroup.Item>The duration of this task is maximum of 10 minutes as the beginning of the instruction</ListGroup.Item>
+      
     </ListGroup>
         </Container>
        </div>
