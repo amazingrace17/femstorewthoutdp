@@ -13,7 +13,8 @@ export const Shop = () => {
   // const [show, setShow] = useState(true);
 
   // const handleClose = () => setShow(false);
- 
+
+
 
   const navigate = useNavigate();
   return (

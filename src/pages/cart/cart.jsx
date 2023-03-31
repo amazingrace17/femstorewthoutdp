@@ -69,6 +69,7 @@ const timeTaken = formatTime(elapsedTime)
          bill:totalAmount,
         }) 
         console.log(data, 'SAVING TO Cart')
+        navigate("/contact");
     }catch(err){
 alert("Registration failed")
     }
@@ -106,7 +107,7 @@ alert("Registration failed")
            handleStop()
             console.log(`Elapsed Time: ${formatTime(elapsedTime)}` )
             console.log(timeTaken)
-            navigate("/contact");
+           
           }}> Checkout</button>
           <br/>
          {/* <input
